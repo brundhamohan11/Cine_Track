@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎥 Cine Track</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <marquee direction="left" behavior="slide"><h1>🎬 Cine Track</h1></marquee>
+
+    <form id="movie-form">
+      <input type="text" id="title" placeholder="Movie Title" required />
+      <input type="text" id="poster" placeholder="Poster URL" required />
+      <input type="text" id="theme" placeholder="Theme" required />
+      <input type="number" id="year" placeholder="Year" required />
+      <input type="number" id="rating" placeholder="Rating (1-10)" required />
+      <select id="status">
+        <option value="Not Watched">Not Watched</option>
+        <option value="Watched">Watched</option>
+      </select>
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <div id="movie-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
